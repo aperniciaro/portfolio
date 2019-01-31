@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -9,4 +10,40 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+}
+
+header {
+  background-image: url(/images/space.png);
+  display: flex;
+  justify-content: column;
+}
+
+.projects {
+  display: flex;
+  justify-content: column;
+  background-color: black;
+  margin: 0;
+  padding: 2rem;
+}
+
+.blog {
+  background-color: black;
+  margin: 0;
+}
+
+.blog-post article {
+  background-color: white;
+  margin: 2rem;
+}
+
+section a p {
+  background-color: blue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin: 0;
 }
