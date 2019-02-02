@@ -13,7 +13,7 @@ body {
   background-color: rgb(3 16 25);
 }
 
-header {
+.page-head {
   background-image: url(/images/space.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -22,13 +22,13 @@ header {
   margin: 0;
 }
 
-.salutation {
+.personal {
   display: flex;
   flex-direction: row;
   margin: 5rem;
 }
 
-.salutation img {
+.personal img {
   border: 0.5rem solid transparent;
   border-radius: 5%;
 }
@@ -36,20 +36,48 @@ header {
 .word-bubble {
   background-color: white;
   opacity: 0.75;
-  width: 30rem;
+  width: 25rem;
   height: 4rem;
   border: 0.5rem solid transparent;
   border-radius: 5%;
   display: flex;
   flex: wrap;
   flex-direction: column;
+  margin: 0 0 0 1rem;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+h3 {
+  font-size: 1.75rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+h4 {
+  opacity: 0.75;
+  margin: 0;
+}
+
+.personal div {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.triangle {
+  opacity: 1;
+  position: relative;
+  position: bottom;
 }
 
 .projects {
   display: flex;
-  justify-content: column;
-  /* use media queries to control wrapping behavior */
   flex: wrap;
+  justify-content: column;
+  width: 100%;
+  justify-content: center;
+  /* use media queries to control wrapping behavior */
   margin: 0.75rem;
   position: bottom;
   /* second background not working */
@@ -76,7 +104,7 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   border: 0.5rem solid transparent;
-  border-radius: 12%;
+  border-radius: 10%;
 }
 
 .blog-head {
@@ -86,12 +114,34 @@ header {
 #blog-post-1 {
   background-image: url(/images/react.png);
   /* position translation not working */
-  background-position-y: 68%;
 }
 
 .blog article div {
   background-color: white;
   margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.blog article div header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.blog article div p {
+  margin: 1rem;
+  padding: 0;
 }
 
 section a p {
@@ -112,4 +162,8 @@ footer {
   align-items: center;
   color: white;
   margin: 0;
+}
+
+h6 {
+  font-size: 0.5rem;
 }
