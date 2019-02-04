@@ -9,7 +9,7 @@ html {
 
 body {
   min-height: 100%;
-  margin: 0;
+  margin: 1rem;
   background-color: rgb(3 16 25);
 }
 
@@ -25,28 +25,27 @@ body {
 .personal {
   display: flex;
   flex-direction: row;
-  margin: 5rem;
+  margin: 1rem;
   align-items: flex-end;
 }
 
-.personal img {
+.my-pic {
   border-top: 0.5rem solid transparent;
   border-radius: 5%;
   height: 13rem;
-  width: 13rem;
   transform: rotate(0.75turn);
 }
 
 .word-bubble {
   background-color: white;
   opacity: 0.75;
-  width: 12.4rem;
+  width: 12rem;
   height: 3rem;
   border: 0.5rem solid transparent;
   border-radius: 5%;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 0.25rem;
   justify-content: center;
   position: absolute;
 }
@@ -71,22 +70,21 @@ h4 {
   display: none;
 }
 
-ul {
+.projects {
   display: flex;
-  flex: wrap;
-  justify-content: column;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  margin: 0.75rem;
+  margin-left: -2rem;
+  justify-content: space-around;
   /* second background not working */
   background-color: rgba(3 16 25 1);
-  z-index: 3;
   list-style: none;
 }
 
-ul img {
+.projects img {
   height: 5rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0.5rem;
+  flex-grow: 1;
 }
 
 .blog {
@@ -126,7 +124,7 @@ ul img {
   flex-direction: row;
   align-items: center;
   margin: 0;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem;
 }
 
 h1 {
@@ -165,6 +163,19 @@ footer {
   margin: 0;
 }
 
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 15rem;
+  list-style: none;
+}
+
+footer img {
+  margin: 0;
+  height: 2rem;
+}
+
 h6 {
   font-size: 0.5rem;
 }
@@ -172,23 +183,37 @@ h6 {
 @media (min-width: 700px) {
   .personal {
     align-items: initial;
+    margin: 5rem;
+  }
+
+  .personal img {
+    margin-top: 0.75rem;
   }
 
   .word-bubble {
     position: initial;
-    width: 25rem;
-    margin: 0 0 0 1rem;
-    height: 4rem;
+    width: 30rem;
+    margin: 0 0 0 1.25rem;
+    padding: 0.25rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
   }
 
-  ul img {
-    height: 10rem;
+  /* .triangle {
+    display: initial;
+    position: relative;
+  } */
+
+  h3 {
+    font-size: 2rem;
   }
 
   h4 {
     display: initial;
     opacity: 0.75;
     margin: 0;
+    font-size: 1.1rem;
   }
 
   .triangle {
@@ -196,9 +221,20 @@ h6 {
     position: bottom;
   }
 
+  .projects img {
+    height: 10rem;
+  }
+
+  .blog article div {
+    padding: 1rem;
+  }
+
+  .blog article div header {
+    padding: 0 0 1rem 0;
+  }
+
   .blog article div p {
     display: initial;
     margin: 1rem;
-    padding: 0;
   }
 }
